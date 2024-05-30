@@ -25,7 +25,6 @@ const Formulario = (props) => {
         setNome('')
         setCargo('')
         setImage('')
-        // setTime('')
         props.aoColaborador(formData)
     }
     const cargosTimesNome = timeValores.map(time => time.nome)

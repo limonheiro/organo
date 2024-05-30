@@ -10,7 +10,6 @@ function App() {
 
   
   const aoColaboradorCadastrado = (colaborador) => {
-    debugger
     setColaboradores([...colaboradores, colaborador])
   }
 

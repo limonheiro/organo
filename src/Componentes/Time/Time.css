@@ -1,0 +1,30 @@
+.time{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px 0px;
+    gap: 8px;
+    text-align: center;  
+}
+
+.time h3{
+    font-size: 32px;
+    font-family: serif;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+    color: #212121
+}
+
+.time .line{
+    height: 4px;
+    width: 32px;
+    margin: 0px auto;
+}
+
+.card__list{
+    padding-top: 42px;
+    display: flex;
+    gap: 24px;
+}

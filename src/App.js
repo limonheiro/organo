@@ -1,23 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react';
+import Banner from './Componentes/Banner';
+import Formulario from './Componentes/Formulario'
+import Time from './Componentes/Time';
+import timeValores from './dados/cargos';
+import Footer from './Componentes/Footer';
 
 function App() {
+  const [colaboradores, setColaboradores] = useState([])
+
+  
+  const aoColaboradorCadastrado = (colaborador) => {
+    debugger
+    setColaboradores([...colaboradores, colaborador])
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Banner />
+      <Formulario aoColaborador={aoColaboradorCadastrado} />
+      {timeValores.map(cargo => {
+        return <Time
+          key={cargo.nome}
+          nome={cargo.nome}
+          corPrimaria={cargo.corPrimaria}
+          corSegundaria={cargo.corSegundaria}
+          colaboradores={colaboradores.filter(colaborador => colaborador.time === cargo.nome)}
+        />
+      })}
+      <Footer></Footer>
     </div>
   );
 }

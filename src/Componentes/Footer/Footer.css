@@ -1,0 +1,29 @@
+footer{
+    position: absolute;
+    width: 100%;
+    background: #6278F7;
+    color: #fff;
+}
+
+footer p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.container__footer{
+    padding: 75px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-between;
+    gap: 20%;
+    align-items: center;
+}
+.container__footer_social{
+    display: flex;
+    gap: 32px;
+}
+
+.container__footer_social{
+    height: 32px;
+}

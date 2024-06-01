@@ -1,14 +1,15 @@
-.time{
+.time {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 32px 0px;
     gap: 8px;
-    text-align: center;  
+    text-align: center;
 }
 
-.time h3{
+.time h3 {
     font-size: 32px;
     font-family: serif;
     font-weight: 400;
@@ -17,14 +18,37 @@
     color: #212121
 }
 
-.time .line{
+.time .line {
     height: 4px;
     width: 32px;
     margin: 0px auto;
 }
 
-.card__list{
+.card__list {
     padding-top: 42px;
     display: flex;
     gap: 24px;
+}
+
+input[type="color"] {
+	/* opacity: 0; */
+	display: block;
+	width: 32px;
+	height: 32px;
+	border: none;
+    border-radius: 100%;
+    background-color: transparent;
+}
+
+input[type="color"]:hover{
+    opacity: 0.7;
+}
+
+.input-color {
+    border-radius: 100%;
+    position: absolute;
+    top: 5%;
+    /* width: 30px;
+    height: 30px; */
+    right: 1%;
 }

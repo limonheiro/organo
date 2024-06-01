@@ -1,49 +1,70 @@
-// const cargos = [
-//     'Programação',
-//     'Front-End',
-//     'Data Science',
-//     'Devops',
-//     'Ux e Design',
-//     'Mobile',
-//     'Inovação e Gestão'
-// ]
+
+import { v4 as uuidv4 } from 'uuid';
 
 const timeValores = [
     {
+        id:uuidv4(),
         nome: 'Programação',
-        corSegundaria: '#D9F7E9',
         corPrimaria: '#57C278'
     },
     {
+        id:uuidv4(),
         nome: 'Front-End',
-        corSegundaria: '#E8F8FF',
         corPrimaria: '#82CFFA'
     },
     {
+        id:uuidv4(),
         nome: 'Data Science',
-        corSegundaria: '#F0F8E2',
         corPrimaria: '#A6D157'
     },
     {
+        id:uuidv4(),
         nome: 'Devops',
-        corSegundaria: '#FDE7E8',
         corPrimaria: '#E06B69'
     },
     {
+        id:uuidv4(),
         nome: 'Ux e Design',
-        corSegundaria: '#FAE9F5',
         corPrimaria: '#DB6EBF'
     },
     {
+        id:uuidv4(),
         nome: 'Mobile',
-        corSegundaria: '#FFF5D9',
         corPrimaria: '#FFBA05'
     },
     {
+        id:uuidv4(),
         nome: 'Inovação e Gestão',
-        corSegundaria: '#FFEEDF',
         corPrimaria: '#FF8A29'
     }
 ]
 
+const Colaboradores = [
+    {
+        id:uuidv4(),
+        nome: 'Nicolinha',
+        cargo: 'desenvolvedor',
+        image: 'https://github.com/glenn-jocher.png',
+        time: 'Programação',
+        favorito:false,
+    },
+    {
+        id:uuidv4(),
+        nome: 'Luis Gilerme',
+        cargo: 'Arch Linux',
+        image: 'https://github.com/hdnh2006.png',
+        time: 'Programação',
+        favorito:false,
+    },
+    {
+        id:uuidv4(),
+        nome: 'Luis Gilerme',
+        cargo: 'Arch Linux',
+        image: 'https://github.com/hdnh2006.png',
+        time: 'Devops',
+        favorito:true,
+    },
+]
+
+export { Colaboradores }
 export default timeValores
